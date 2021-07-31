@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #302e30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    background-color: #af75af;
+    width: 440px;
+    height: 454px;
+    overflow: hidden;
+    box-shadow: 10px 10px 26px -6px #121212;
+    border-radius: 12px;
+}
+#history{
+    height: 80px;
+    background-color: #302e30;
+    overflow: hidden;
+}
+ #cox{
+    height: 50px;
+ width: 440px;
+ background-color: #302e30;
+ color: #af75af;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-size: 15px;
+ font-weight: bold;
+ border: none;
+ outline: none;
+ border-color: #282828 #302e30 #282828 #302e30;
+ border-style: solid;
+}
+input{
+    width: 440px;
+    height: 65px;
+    font-size: 18px;
+    background-color: #302e30;
+    border: none;
+    outline: none;
+    color: #af75af;
+    text-align: right;
+    padding: 12px;
+    
+}
+.layer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+.layer button{
+    flex: 1;
+    height: 50px;
+    margin: 3px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #302e30;
+    /* color: #cbc7cc; */
+    color: #af75af;
+    border: 1px solid #252525;
+}
+button:focus, button:hover, button::selection{
+    border: none;
+    outline: none;
+    border: 1px solid #252525;
+}
+.h h3{
+    margin-left: 19px;
+    margin-top: 5px;
+    color: #cbc7cc;
+    margin-bottom: 5px;
+}
+#history p{
+    margin-left: 19px;
+    margin-top: 5px;
+    /* color: #cbc7cc; */
+    padding: 3px;
+    color: #af75af;
+}
+.h{
+ overflow: hidden;
+}
+.h #history {
+    overflow-y: visible;
+}
+
+/* media query */
+
+
+
+@media screen and (max-width:500px) {
+    
+        .container{
+            width: 300px;   
+        }
+        #cox{
+            margin-left: -72px;
+        }
+        input{
+        text-align: left;
+           
+        }
+        #history p{
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+}
